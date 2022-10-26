@@ -1,8 +1,8 @@
 # 阿里云域名动态IP解析Shell小脚本
 当你手里面有一个闲置的域名，有一个漂浮不定的外网ip，你又想在外网ip变更后自动解析到域名上，此情此景此脚本可能会帮上你。
 # 更新日志
-- 2020-09-29 支持IPV6解析（支持设置解析记录类型：A、NS、MX、TXT、CNAME、SRV、AAAA、CAA、REDIRECT_URL、FORWARD_URL）
-- 2021-09-06 支持设置解析线路
+- 2022-09-29 支持IPV6解析（支持设置解析记录类型：A、NS、MX、TXT、CNAME、SRV、AAAA、CAA、REDIRECT_URL、FORWARD_URL）
+- 2022-09-06 支持设置解析线路
 ---
 ## 使用步骤：
 - 在阿里云域名管理中解析自己的域名
@@ -17,7 +17,7 @@
     - 创建新的AccessKey https://ram.console.aliyun.com/users/domian
     - 给子账号授权：权限管理-个人权限 权限策略名称：AliyunDNSFullAccess
 - 运行自动解析域名脚本
-    - git clone https://github.com/risfeng/aliyun-ddns-shell.git
+    - git clone https://github.com/55144053/aliyun-ddns-shell.git
     - 给aliyun-ddns.sh脚本赋可执行权：`chmod +x aliyun-ddns-shell/src/aliyun/aliyun-ddns.sh`
     - 运行脚本，根据提示进行配置（第一次运行需要配置）
     - 如需要使用钉钉自定义机器人推送成功失败消息，请新建自定义钉钉机器人，配置access_token和消息加签密钥
@@ -70,7 +70,7 @@
         - 重新加载配置：`service crond reload`
         - 注意观察任务是否成功执行，如有疑问请自行百度
 ## 效果图
-![启动页面](https://raw.githubusercontent.com/risfeng/aliyun-ddns-shell/master/src/aliyun/screenshot/ss1.jpg)
-![配置页面](https://raw.githubusercontent.com/risfeng/aliyun-ddns-shell/master/src/aliyun/screenshot/ss2.jpg)
-![运行页面](https://raw.githubusercontent.com/risfeng/aliyun-ddns-shell/master/src/aliyun/screenshot/ss3.jpg)
+![启动页面](https://raw.githubusercontent.com/55144053/aliyun-ddns-shell/master/src/aliyun/screenshot/ss1.jpg)
+![配置页面](https://raw.githubusercontent.com/55144053/aliyun-ddns-shell/master/src/aliyun/screenshot/ss2.jpg)
+![运行页面](https://raw.githubusercontent.com/55144053/aliyun-ddns-shell/master/src/aliyun/screenshot/ss3.jpg)
 ## 欢迎star给予支持
